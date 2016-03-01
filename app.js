@@ -212,13 +212,18 @@
 
       var li = document.createElement('li');
 
-
-              var newElement = document.createElement("span");
-              newElement.innerHTML =  Math.random()*100;
-            //  newElement.setAttribute("class", "id");
-
-              //document.getElementsByTagName("h1")[0].setAttribute("class", "id");
-              li.appendChild(newElement);
+          var newElement = document.createElement("span");
+          newElement.innerHTML = (Math.random()*100);
+        /*  newElement.innerHTML = (function(){
+            for (var i=0; i<newElement.length; i++){
+              var li = newElement[i];
+                var stack = li.querySelector('span').innerHTML; //innerHTML annab sisu
+              }
+            });
+          */
+          //  newElement.setAttribute("class", "id");
+          //document.getElementsByTagName("h1")[0].setAttribute("class", "id");
+            li.appendChild(newElement);
 
       var span = document.createElement('span');
       span.className = 'letter';
